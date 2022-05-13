@@ -6,6 +6,6 @@ import java.time.LocalDate;
 
 @Data
 public class MetaInf {
-    private int weight;
     private LocalDate expirationDate;
+    private boolean isDiscount;
 }
