@@ -2,6 +2,7 @@ package ru.clevertec.util;
 
 import ru.clevertec.dto.MetaInf;
 import ru.clevertec.dto.Product;
+import ru.clevertec.dto.Shop;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -17,6 +18,10 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(true)
                     .setExpirationDate(LocalDate.parse("2022-06-08"))
+                    .setShopList(List.of(
+                        Shop.ALMI,
+                        Shop.DVA_GUSIA
+                    ))
                 ),
             new Product()
                 .setName("apple")
@@ -25,6 +30,11 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-06-03"))
+                    .setShopList(List.of(
+                        Shop.EVROOPT,
+                        Shop.DVA_GUSIA,
+                        Shop.KOPEECHKA
+                    ))
                 ),
             new Product()
                 .setName("potato")
@@ -33,6 +43,9 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(true)
                     .setExpirationDate(LocalDate.parse("2022-09-14"))
+                    .setShopList(List.of(
+                        Shop.ALMI
+                    ))
                 ),
             new Product()
                 .setName("carrot")
@@ -41,6 +54,10 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-09-08"))
+                    .setShopList(List.of(
+                        Shop.DVA_GUSIA,
+                        Shop.EVROOPT
+                    ))
                 ),
             new Product()
                 .setName("orange")
@@ -49,6 +66,11 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-07-24"))
+                    .setShopList(List.of(
+                        Shop.EVROOPT,
+                        Shop.ALMI,
+                        Shop.KOPEECHKA
+                    ))
                 ),
             new Product()
                 .setName("egg")
@@ -57,6 +79,12 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(true)
                     .setExpirationDate(LocalDate.parse("2022-06-25"))
+                    .setShopList(List.of(
+                        Shop.ALMI,
+                        Shop.DVA_GUSIA,
+                        Shop.EVROOPT,
+                        Shop.KOPEECHKA
+                    ))
                 ),
             new Product()
                 .setName("lemon")
@@ -65,6 +93,10 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-10-10"))
+                    .setShopList(List.of(
+                        Shop.ALMI,
+                        Shop.KOPEECHKA
+                    ))
                 ),
             new Product()
                 .setName("bread")
@@ -73,6 +105,9 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(true)
                     .setExpirationDate(LocalDate.parse("2022-05-25"))
+                    .setShopList(List.of(
+                        Shop.KOPEECHKA
+                    ))
                 ),
             new Product()
                 .setName("milk")
@@ -81,6 +116,11 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-11-11"))
+                    .setShopList(List.of(
+                        Shop.EVROOPT,
+                        Shop.DVA_GUSIA,
+                        Shop.KOPEECHKA
+                    ))
                 ),
             new Product()
                 .setName("fish")
@@ -89,6 +129,10 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-09-26"))
+                    .setShopList(List.of(
+                        Shop.DVA_GUSIA,
+                        Shop.EVROOPT
+                    ))
                 ),
             new Product()
                 .setName("chicken")
@@ -97,6 +141,12 @@ public class ProductUtils {
                 .setMetaInf(new MetaInf()
                     .setDiscount(false)
                     .setExpirationDate(LocalDate.parse("2022-12-17"))
+                    .setShopList(List.of(
+                        Shop.ALMI,
+                        Shop.DVA_GUSIA,
+                        Shop.KOPEECHKA,
+                        Shop.EVROOPT
+                    ))
                 )
         );
     }
