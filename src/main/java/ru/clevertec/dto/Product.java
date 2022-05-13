@@ -8,6 +8,6 @@ import java.math.BigDecimal;
 public class Product {
     private String name;
     private BigDecimal price;
-    private int number;
+    private int weight;
     private MetaInf metaInf;
 }
