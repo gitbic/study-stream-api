@@ -24,8 +24,13 @@ public class Runner {
         }
 
         System.out.println("discountProductNames = " + discountProductNames);
+//-----------------------------------------------------------------------
+        List<String> discountProductNameList = products.stream()
+            .filter(product -> product.getMetaInf().isDiscount())
+            .map(product -> product.getName())
+            .collect(Collectors.toList());
 
-
+        System.out.println("discountProductNameList = " + discountProductNameList);
     }
 
 }
