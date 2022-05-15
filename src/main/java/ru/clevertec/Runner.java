@@ -12,5 +12,7 @@ public class Runner {
 
         // Задача: вывести имя продукта и его стоимость на консоль
 
+        products
+            .forEach(product -> System.out.println(product.getName() + " cost: " + product.getPrice()));
     }
 }
