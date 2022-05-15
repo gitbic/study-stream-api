@@ -19,6 +19,14 @@ public class Runner {
             }
         };
 
+        Greeting greeting1 = name -> {
+            return "Hello " + name;
+        };
+
+        Greeting greeting2 = name -> "Hello " + name;
+
         System.out.println(greeting.sayHallo("Dima"));
+        System.out.println(greeting1.sayHallo("Dima"));
+        System.out.println(greeting2.sayHallo("Dima"));
     }
 }
