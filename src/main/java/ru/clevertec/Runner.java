@@ -10,5 +10,7 @@ public class Runner {
     public static void main(String[] args) {
         List<Product> products = ProductUtils.createProducts();
 
+        // Задача: вывести имя продукта и его стоимость на консоль
+
     }
 }
