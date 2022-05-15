@@ -10,5 +10,10 @@ public class Runner {
 
         // Умножить два числа с помощью бинарного оператора
 
+        BinaryOperator<Integer> multiply = (x, y) -> x * y;
+
+        Integer result = multiply.apply(5, 9);
+
+        System.out.println("result = " + result);
     }
 }
