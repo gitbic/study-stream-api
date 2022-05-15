@@ -10,5 +10,7 @@ public class Runner {
     public static void main(String[] args) {
         List<Product> products = ProductUtils.createProducts();
 
+        //Задача: уменьшить цену для товаров на скидке на 10% и вывести на консоль продукты
+
     }
 }
