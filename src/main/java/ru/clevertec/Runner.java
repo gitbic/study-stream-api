@@ -1,14 +1,14 @@
 package ru.clevertec;
 
 
-import ru.clevertec.dto.Product;
-import ru.clevertec.util.ProductUtils;
-
-import java.util.List;
+interface BinaryOperator<T> {
+    T apply(T t1, T t2);
+}
 
 public class Runner {
     public static void main(String[] args) {
-        List<Product> products = ProductUtils.createProducts();
+
+        // Умножить два числа с помощью бинарного оператора
 
     }
 }
