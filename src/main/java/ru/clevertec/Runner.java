@@ -9,5 +9,11 @@ public class Runner {
 
         // Задача: Получить String из числа Double
 
+        Function<Double, String> convert = number -> String.valueOf(number);
+
+        String stringNumber = convert.apply(20.02);
+
+        System.out.println("stringNumber = " + stringNumber);
+
     }
 }
