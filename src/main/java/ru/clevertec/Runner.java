@@ -1,14 +1,10 @@
 package ru.clevertec;
 
 
-import ru.clevertec.dto.Product;
-import ru.clevertec.util.ProductUtils;
-
-import java.util.List;
-
 public class Runner {
     public static void main(String[] args) {
-        List<Product> products = ProductUtils.createProducts();
-    }
 
+    // Задача: Создать функциональный интерфейс Greeting, с методом sayHallo который принимает строку "имя" и возвращает строку приветствия
+    //         С помощью анонимного класса реализовать интерфейс Greeting
+    }
 }
