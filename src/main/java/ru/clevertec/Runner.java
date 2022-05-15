@@ -1,17 +1,17 @@
 package ru.clevertec;
 
-
-import ru.clevertec.dto.Product;
-import ru.clevertec.util.ProductUtils;
-
-import java.util.List;
+interface Consumer<T> {
+    void accept(T t);
+}
 
 public class Runner {
     public static void main(String[] args) {
-        List<Product> products = ProductUtils.createProducts();
 
-        // Задача: вывести имя продукта и его стоимость на консоль
+        // Реализовать функциональный интерфейс Consumer, который напечатает 100 долларов
 
+        Consumer<Integer> printer = integer -> System.out.println(integer + " dollars");
+
+        printer.accept(100);
 
     }
 }
