@@ -10,5 +10,10 @@ public class Runner {
 
         // Получить квадрат числа с помощью унарного оператора
 
+        UnaryOperator<Integer> square = x -> x*x;
+
+        Integer result = square.apply(5);
+
+        System.out.println("result = " + result);
     }
 }
