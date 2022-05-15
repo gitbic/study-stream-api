@@ -1,14 +1,12 @@
 package ru.clevertec;
 
-
-import ru.clevertec.dto.Product;
-import ru.clevertec.util.ProductUtils;
-
-import java.util.List;
-
+interface Supplier<T> {
+    T get();
+}
 public class Runner {
     public static void main(String[] args) {
-        List<Product> products = ProductUtils.createProducts();
+
+        // Задача сгенерировать текущее время при помощи интерфейса supplier
 
     }
 }
