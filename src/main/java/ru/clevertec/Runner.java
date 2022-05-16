@@ -10,5 +10,7 @@ public class Runner {
     public static void main(String[] args) {
         List<Product> products = ProductUtils.createProducts();
 
+        //        Задача:  Найти все продукты в доступные в магазине Алми и посчитать сколько выйдет в сумме за все доступные продукты
+
     }
 }
